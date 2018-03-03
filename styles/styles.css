@@ -19,7 +19,7 @@ body, html {
     background-position: 40px 16px;
     font-family: 'Cormorant Garamond', serif;
     font-weight: 300;
-    color: #b7b7b7;
+    color: #333333;
     letter-spacing: 0.03em;
     font-size: 19px;
     border-bottom: 1px solid #add9e7;
@@ -29,6 +29,7 @@ body, html {
     align-content: center;
     width: 100%;
     border-bottom: 1px solid #add9e7;
+    cursor: default;
 }
 #header .menu .leftMenu{
     display: flex;
@@ -43,6 +44,10 @@ body, html {
     display: flex;
     justify-content: center;
     color: #333333;
+}
+#header .menu .menuTab:hover{
+    background-color: #9AD9E4;
+    transition: background-color .8s;
 }
 #header .menu .leftMenu .menuTab{
     width: 50%;

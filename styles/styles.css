@@ -1,0 +1,20 @@
+}
+#header{
+    position: fixed;
+    width: 100%;
+}
+#header .search input{
+    width: 100%;
+    border: none;
+    padding: 18px 20px 18px 75px;
+    outline: none;
+    background: url("..//Icons/search.svg") no-repeat;
+    background-size: 24px;
+    background-position: 40px 16px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    color: #b7b7b7;
+    letter-spacing: 0.03em;
+    font-size: 19px;
+    border-bottom: 1px solid #add9e7;
+}

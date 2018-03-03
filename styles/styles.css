@@ -1,3 +1,7 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant Garamond', serif;
 }
 #header{
     position: fixed;
@@ -18,3 +22,55 @@
     font-size: 19px;
     border-bottom: 1px solid #add9e7;
 }
+#header .menu{
+    display: flex;
+    align-content: center;
+    width: 100%;
+    border-bottom: 1px solid #add9e7;
+}
+#header .menu .leftMenu{
+    display: flex;
+    align-content: flex-start;
+    width: 33.33%;
+}
+#header .menu .menuTab{
+    width: 150px;
+    margin: auto 0;
+    text-align: center;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+}
+#header .menu .leftMenu .menuTab{
+    width: 50%;
+    border-right: 1px solid #add9e7;
+    margin: auto 0;
+    display: flex;
+    align-items: center;
+}
+#header .menu .rightMenu .menuTab{
+    width: 33.33%;
+    border-right: 1px solid #add9e7;
+    margin: auto 0;
+    display: flex;
+    align-items: center;
+}
+#header .menu .logo{
+    display: flex;
+    align-content: flex-start;
+    border-right: 1px solid #add9e7;
+    width: 33.33%;
+    height: 90px;
+    text-align: center;
+}
+#header .menu .logo img{
+    max-height: 44px;
+    margin: auto auto;
+}
+#header .menu .rightMenu{
+    display: flex;
+    align-content: flex-end;
+    width: 33.33%;
+}
+
+

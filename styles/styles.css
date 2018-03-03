@@ -6,6 +6,8 @@ body, html {
 #header{
     position: fixed;
     width: 100%;
+    background-color: white;
+    z-index: 2;
 }
 #header .search input{
     width: 100%;
@@ -72,5 +74,20 @@ body, html {
     align-content: flex-end;
     width: 33.33%;
 }
-
+.banner{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    padding-top: 150px;
+}
+.banner .bannerTitle{
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 200px);
+    color: white;
+    font-size: 130px;
+}
+.banner img{
+    width: 100%;
+}
 

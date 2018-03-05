@@ -152,6 +152,10 @@ body, html {
     text-decoration: underline;
     cursor: default;
 }
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
 .gallery .filter{
     margin-top: 30px;
     width: calc(18% - 30px);
@@ -230,6 +234,45 @@ body, html {
 .gallery .filter .shareCollection:hover{
     text-decoration: underline;
 }
+.gallery .products{
+    width: 82%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    height: 500px;
+    margin-bottom: 70px;
+}
+.gallery .products .product{
+    width: calc(33.33% - 50px);
+    margin:20px 25px;
+
+}
+.gallery .products .product .productImage{
+    width: 100%;
+}
+.gallery .products .product .productImage img{
+    width: 100%;
+}
+.gallery .products .product .productDescription{
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+    color: #333333;
+    margin-top: 10px;
+}
+.gallery .products .product .productPrice{
+    width: 100%;
+    display: block;
+    font-family: Helvetica;
+    font-size: 18px;
+    letter-spacing: 0.15em;
+    text-align: center;
+    color: #98b859;
+    margin: 10px 0;
+}
+
 
 
 

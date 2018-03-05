@@ -87,6 +87,15 @@ body, html {
     align-content: flex-end;
     width: 33.33%;
 }
+#header .dropDownMenu{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    margin-top: ;
+}
+#header .menu .leftMenu:first-child:hover .dropDownMenu{
+    display: block;
+}
 .banner{
     width: 100%;
     position: relative;
@@ -242,10 +251,7 @@ body, html {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-
-    height: 500px;
     margin-bottom: 70px;
-
 }
 .gallery .products .product{
     width: calc(33.33% - 50px);
@@ -278,28 +284,155 @@ body, html {
 }
 .footer{
     display: flex;
-    flex-direction: column;
-    flex: 2 100%;
+    flex-wrap: wrap;
+
 }
 .footer .footerMenu{
+    width: 100%;
+}
+.footer .footerMenu .footerMenuTabs{
     width: 100%;
     border-top: 1px solid #add9e7;
     border-bottom: 1px solid #add9e7;
     display: flex;
-    flex-flow: row wrap;
 
 }
-.footer .footerMenu .footerMenuTabs{
+.footer .footerMenu .footerMenuTabs .footerMenuTab{
     width: calc(25% - 1px);
     text-align: center;
     border-right: 1px solid #add9e7;
     padding: 30px 0;
     font-size: 1.3em;
+
+}
+.footer .footerMenu .footerMenuTabs .footerMenuTab:hover{
+    background-color: #9AD9E4;
+    transition: background-color 0.8s;
+    cursor: default;
 }
 .footer .footerMenu .footerMenuTabs:last-child{
     border-right: none;
 }
+.footer .footerInfo{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #add9e7;
+}
+.footer .footerInfo .newsletter{
+    width: calc(33.33% - 21px);
+    border-right: 1px solid #add9e7;
+    margin:20px 10px;
+}
+.footer .footerInfo .newsletter .newsletterTitle{
+    font-size: 21px;
+    color: #818181;
+    text-align: center;
+    padding: 20px 0;
+}
+.footer .footerInfo .newsletter .newsletterDescription{
+    font-size: 16px;
+    color: #818181;
+    text-align: center;
+    max-width: 310px;
+    margin: 0 auto;
+    letter-spacing: 0.03em;
+    line-height: 22px;
+}
+.footer .footerInfo .newsletter .emailAddress{
+    text-align: center;
+    padding-top: 10px;
+    margin: 15px 0;
+}
+.footer .footerInfo .newsletter .emailAddress input{
+    text-align: center;
+    font-family: 'Cormorant Garamond';
+    letter-spacing: 0.02em;
+    font-size: 18px;
+    color: #333333;
+    width: 280px;
+    height: 36px;
+    background-color: #f8f8f8;
+    border: 1px solid #cccccc;
+    outline: none;
+}
+.footer .footerInfo .newsletter .subscribeButton {
+    text-align: center;
+}
 
+.footer .footerInfo .newsletter .subscribeButton input{
+    width: 150px;
+    padding: 15px;
+    border-radius: 3px;
+    font-family: Helvetica;
+    font-size: 9px;
+    font-weight: 300;
+    letter-spacing: .3em;
+    color: white;
+    border: none;
+    outline: none;
+    background-color: #59767a;
+}
+.footer .footerInfo .newsletter .subscribeButton:hover input{
+    background-color: #688386;
+    transition: background-color .4s;
+}
+
+.footer .footerInfo .footerAd{
+    width: calc(33.33% - 1px);
+    border-right: 1px solid #add9e7;
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px 0;
+}
+.footer .footerInfo .footerAd img{
+    width: 300px;
+}
+.footer .footerInfo .contactInfo{
+    width: 33.33%;
+    line-height: 20px;
+    font-size: 15px;
+}
+.footer .footerInfo .contactInfo .contactInfoSection{
+    text-align: center;
+}
+.footer .footerInfo .contactInfo .contactInfoTitle.Top{
+    padding: 40px 0 10px 0;
+}
+.footer .footerInfo .contactInfo .contactInfoTitle{
+    font-size: 21px;
+    color: #818181;
+    text-align: center;
+    padding: 25px 0 10px 0;
+}
+.footer .footerInfo .contactInfo .contactInfoDetails h4{
+    display: inline;
+    font-weight: 400;
+}
+.footer .footerInfo .contactInfo .contactInfoDetails{
+    color: #BD4F5C;
+}
+.footer .footerInfo .contactInfo h4{
+    color: #818181;
+    padding-right: 5px;
+    display: inline;
+    font-weight: 400;
+}
+.footer .footerInfo .contactInfo .contactInfoSection .socialMedia{
+    display: inline;
+    color: #BD4F5C;
+}
+.tradeMark{
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    padding: 20px 0;
+}
+.tradeMark h4{
+    display: inline;
+    color: #BD4F5C;
+    font-weight: 400;
+}
 
 
 

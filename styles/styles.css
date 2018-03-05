@@ -183,7 +183,7 @@ body, html {
 .gallery .filter .filterProducts .filterProduct{
     width: calc(50% - 1px);
     display: block;
-    margin: 30px 0;
+    margin: 25px 0;
     text-align: center;
     color: #cccccc;
     font-size: 1.1em;
@@ -218,6 +218,17 @@ body, html {
     height: 18px;
     background-color: #ccc;
     margin: auto auto;
+}
+.gallery .filter .shareCollection{
+    font-family: Helvetica;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: #BD4F5C;
+    text-align: center;
+    padding: 20px;
+}
+.gallery .filter .shareCollection:hover{
+    text-decoration: underline;
 }
 
 

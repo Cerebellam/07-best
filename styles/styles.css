@@ -2,6 +2,8 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    letter-spacing: 0.01em;
 }
 #header{
     position: fixed;
@@ -101,4 +103,125 @@ body, html {
 .banner img{
     width: 100%;
 }
+.productsSearch{
+    width: calc(100% - 20px);
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    height: 45px;
+    border-bottom: 1px solid #add9e7;
+    margin: 0 10px;
+}
+.productsSearch .productsTitle{
+    width: calc(10% - 30px);
+    display: flex;
+    justify-content: center;
+    border-right: 1px solid #add9e7;
+    text-align: center;
+    padding: 0 10px 0 20px;
+    font-size: 19px;
+    align-items: center;
+}
+.productsSearch .productTabs{
+    display: flex;
+    width: calc(90% - 40px);
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+.productsSearch .productTabs .productsTab{
+    margin-left: 7px;
+    font-size: 19px;
+    color: #cccccc;
+    justify-items: center;
+}
+.productsSearch .productTabs .productsTab{
+    text-decoration: none;
+}
+.productsSearch .productTabs .productsTab.Selected{
+    color: #BD4F5C;
+}
+.productsSearch .productTabs .productsTab:after{
+    content:"/";
+    margin:0 5px;
+}
+.productsSearch .productTabs .productsTab:last-child:after{
+    content:"";
+}
+.productsSearch .productTabs .productsTab a:hover{
+    text-decoration: underline;
+    cursor: default;
+}
+.gallery .filter{
+    margin-top: 30px;
+    width: calc(18% - 30px);
+    padding: 0 15px;
+}
+.gallery .filter .filterCategories{
+    color: #cccccc;
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #add9e7;
+}
+.gallery .filter .filterCategories .filterCategory.Selected{
+    color: #BD4F5C;
+}
+.gallery .filter .filterCategories .filterCategory:hover{
+    text-decoration: underline;
+    cursor: default;
+}
+.gallery .filter .filterProducts{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.gallery .filter .filterProducts .filterProduct{
+    width: calc(50% - 1px);
+    display: block;
+    margin: 30px 0;
+    text-align: center;
+    color: #cccccc;
+    font-size: 1.1em;
+}
+.gallery .filter .filterProducts .filterProduct:hover{
+    color: #333333;
+    transition: color 0.5s;
+    cursor: default;
+}
+.gallery .filter .bottomBorder{
+    width: 100%;
+    height: 1px;
+    background-color: #add9e7;
+}
+
+.gallery .filter .filterProducts .filterProduct.Border{
+    border-right: 1px solid #add9e7;
+}
+.gallery .filter .filterProducts .filterProduct .redSquares{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.gallery .filter .filterProducts .filterProduct .redSquares .redSquare{
+    width: 10px;
+    height: 10px;
+    background-color: #BD4F5C;
+    margin: 4px 3px;
+}
+.gallery .filter .filterProducts .filterProduct .graySquare{
+    width: 18px;
+    height: 18px;
+    background-color: #ccc;
+    margin: auto auto;
+}
+
+
+
+
+
 

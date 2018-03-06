@@ -52,7 +52,7 @@ body, html {
     transition: background-color .8s;
 }
 #header .menu .leftMenu .menuTab{
-    width: 50%;
+    width: calc(50% - 1px);
     border-right: 1px solid #add9e7;
     margin: auto 0;
     display: flex;
@@ -87,19 +87,89 @@ body, html {
     align-content: flex-end;
     width: 33.33%;
 }
-#header .dropDownMenu{
+.leftMenu .menuTab .bridge{
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    position: absolute;
+}
+.menu .leftMenu .menuTab .dropDownMenu{
     display: none;
     position: absolute;
-    z-index: 2;
-    margin-top: ;
+    z-index: 1;
+    left: 0;
+    background-color: white;
+    margin-top: 292px;
+    width: 100%;
+    text-align: left;
 }
-#header .menu .leftMenu:first-child:hover .dropDownMenu{
+.leftMenu .menuTab:hover .dropDownMenu{
     display: block;
 }
+.leftMenu .menuTab .dropDownMenu .dropDownMenuContent{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-bottom: 1px solid #add9e7;
+}
+.menu .leftMenu .menuTab .dropDownMenu .dropDownMenuContent .dropDownMenuSection{
+    border-right: 1px solid #add9e7;
+    width: calc(17% - 41px);
+    padding: 20px 20px;
+
+}
+.menu .leftMenu .menuTab .dropDownMenu .sectionTitle{
+    font-size: 19px;
+    letter-spacing: 0.01em;
+    margin: 35px 0 10px 0;
+}
+.menu .leftMenu .menuTab .dropDownMenu .sectionTitle.First{
+    margin: 10px 0 15px 0;
+}
+.menu .leftMenu .menuTab .dropDownMenu .sectionSubTitle{
+    font-size: 14px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin: 10px 0;
+    color: #818181;
+}
+.menu .leftMenu .menuTab .dropDownMenu .sectionContact{
+    margin: 40px 0 5px 0;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+}
+.menu .leftMenu .menuTab .dropDownMenu .contactInfo{
+    font-size: 14px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #BD4F5C;
+    margin: 3px 0;
+}
+.menu .leftMenu .menuTab .dropDownMenu .sectionTitle:hover{
+    text-decoration: underline;
+}
+.menu .leftMenu .menuTab .dropDownMenu .sectionSubTitle:hover{
+    text-decoration: underline;
+}
+.menu .leftMenu .menuTab .dropDownMenu .sectionContact:hover{
+    text-decoration: underline;
+}
+.menu .leftMenu .menuTab .dropDownMenu .contactInfo:hover{
+    text-decoration: underline;
+}
+.menu .leftMenu .menuTab .dropDownMenu .dropDownMenuContent .dropDownMenuAd{
+    width: 32%;
+    margin: 20px 0;
+    text-align: center;
+}
+.menu .leftMenu .menuTab .dropDownMenu .dropDownMenuContent .dropDownMenuAd. img{
+    width: 100%;
+}
+
 .banner{
     width: 100%;
     position: relative;
-    z-index: 1;
+    z-index: 0;
     padding-top: 150px;
 }
 .banner .bannerTitle{

@@ -5,6 +5,97 @@ body, html {
     font-weight: 300;
     letter-spacing: 0.01em;
 }
+#mediaHeader{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 2;
+    display: none;
+    border-bottom: 1px solid #add9e7;
+}
+#mediaHeader .hamburgerMenu{
+    width: calc(10% - 1px);
+}
+#mediaHeader .hamburgerMenu .icon{
+    padding: 16px 30px 15px 30px;
+    border-right: 1px solid #add9e7;
+}
+#mediaHeader .hamburgerMenu .icon .line{
+    background: #77787b;
+    width: 26px;
+    height: 2px;
+    margin: 6px 0;
+}
+#mediaHeader .hamburgerMenu .hamburgerTabs{
+    display: none;
+    position: absolute;
+    background: white;
+    width: 100%;
+    margin-top: 1px;
+    text-align: center;
+}
+#mediaHeader .hamburgerMenu .hamburgerTabs .hamburgerMainTabs{
+    width: 50%;
+    border-bottom: 1px solid #add9e7;
+    padding: 15px 0;
+    font-size: 1.2em;
+    color: #333333;
+}
+#mediaHeader .hamburgerMenu .hamburgerTabs .hamburgerMainTabs:first-child{
+    color: #BD4F5C;
+    border-right: 1px solid #add9e7;
+    width: calc(50% - 1px);
+}
+#mediaHeader .hamburgerMenu .hamburgerTabs .hamburgerSubTabs{
+    width: 100%;
+    border-bottom: 1px solid #add9e7;
+    padding: 15px 0;
+    font-size: 0.9em;
+}
+#mediaHeader .hamburgerMenu .hamburgerTabs .hamburgerAccount{
+    width: 50%;
+    background: #ADD8E6;
+    padding: 20px 0;
+    font-size: 1.1em;
+    color: #363636;
+}
+#mediaHeader .hamburgerMenu .hamburgerTabs > .hamburgerAccount{
+    border-right: 1px solid white;
+    width: calc(50% - 1px);
+}
+#mediaHeader .hamburgerMenu:hover .hamburgerTabs{
+    display: flex;
+    flex-wrap: wrap;
+}
+#mediaHeader .mediaLogo{
+    width: calc(78% - 1px);
+    border-right: 1px solid #add9e7;
+    text-align: center;
+    padding: 10px 0 3px 0;
+    margin: auto auto;
+}
+#mediaHeader .mediaLogo img{
+    width: 24%;
+}
+#mediaHeader .mediaSearch{
+    width: calc(6% - 1px);
+    border-right: 1px solid #add9e7;
+    text-align: center;
+    margin: auto 0;
+    padding: 17px 0;
+}
+#mediaHeader .mediaSearch img{
+    width: 22px;
+}
+#mediaHeader .mediaShoppingCart{
+    width: 6%;
+    text-align: center;
+    margin: auto auto;
+    opacity: 0.45;
+}
+#mediaHeader .mediaShoppingCart img {
+    width: 22px;
+}
 #header{
     position: fixed;
     width: 100%;
@@ -504,6 +595,72 @@ body, html {
     font-weight: 400;
 }
 
+
+
+@media (max-width: 1023px) {
+    #mediaHeader {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #header {
+        display: none;
+    }
+    .banner{
+        padding-top: 62px;
+    }
+    .banner .bannerTitle{
+        position: absolute;
+        top: 40%;
+        left: calc(50% - 150px);
+        color: white;
+        font-size: 100px;
+    }
+    .productsSearch{
+        width: calc(100% - 20px);
+        display: flex;
+        justify-content: center;
+        padding: 30px 0;
+        height: 45px;
+        border-bottom: 1px solid #add9e7;
+        margin: 0 10px;
+    }
+    .productsSearch .productsTitle{
+        width: calc(10% - 30px);
+        display: flex;
+        justify-content: center;
+        border-right: 1px solid #add9e7;
+        text-align: center;
+        padding: 0 10px 0 20px;
+        font-size: 19px;
+        align-items: center;
+    }
+    .productsSearch .productTabs{
+        display: flex;
+        width: calc(90% - 40px);
+        justify-content: center;
+        align-items: center;
+        margin: 0 20px;
+    }
+    .productsSearch .productTabs .productsTab{
+        margin-left: 7px;
+        font-size: 19px;
+        color: #cccccc;
+        justify-items: center;
+    }
+    .productsSearch .productTabs .productsTab{
+        text-decoration: none;
+    }
+    .productsSearch .productTabs .productsTab.Selected{
+        color: #BD4F5C;
+    }
+    .productsSearch .productTabs .productsTab:after{
+        content:"/";
+        margin:0 5px;
+    }
+    .productsSearch .productTabs .productsTab:last-child:after{
+        content:"";
+    }
+}
 
 
 

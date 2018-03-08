@@ -781,32 +781,17 @@ body, html {
     .gallery .products .product:last-child{
         display: none;
     }
-    .gallery .products .product .productImage{
-        width: 100%;
-    }
-    .gallery .products .product .productImage img{
-        width: 100%;
-    }
-    .gallery .products .product .productDescription{
-        width: 100%;
-        display: block;
-        text-align: center;
-        font-size: 1.2em;
-        color: #333333;
-        margin-top: 10px;
-    }
-    .gallery .products .product .productPrice{
-        width: 100%;
-        display: block;
-        font-family: Helvetica;
-        font-size: 18px;
-        letter-spacing: 0.15em;
-        text-align: center;
-        color: #98b859;
-        margin: 10px 0;
-    }
     .footer{
         display: none;
+    }
+}
+@media (max-width: 640px) {
+    .gallery .products .product{
+        width: calc(100% - 180px);
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 15px 90px;
     }
 }
 

@@ -19,12 +19,13 @@ body, html {
 #mediaHeader .hamburgerMenu .icon{
     padding: 16px 30px 15px 30px;
     border-right: 1px solid #add9e7;
+
 }
 #mediaHeader .hamburgerMenu .icon .line{
     background: #77787b;
     width: 26px;
     height: 2px;
-    margin: 6px 0;
+    margin: 6px auto;
 }
 #mediaHeader .hamburgerMenu .hamburgerTabs{
     display: none;
@@ -304,8 +305,6 @@ body, html {
     font-size: 19px;
     color: #cccccc;
     justify-items: center;
-}
-.productsSearch .productTabs .productsTab{
     text-decoration: none;
 }
 .productsSearch .productTabs .productsTab.Selected{
@@ -616,49 +615,42 @@ body, html {
         font-size: 100px;
     }
     .productsSearch{
-        width: calc(100% - 20px);
-        display: flex;
+        display:flex;
         justify-content: center;
-        padding: 30px 0;
+        padding: 20px 0;
         height: 45px;
         border-bottom: 1px solid #add9e7;
-        margin: 0 10px;
     }
     .productsSearch .productsTitle{
-        width: calc(10% - 30px);
+        width: calc(48% - 41px);
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         border-right: 1px solid #add9e7;
-        text-align: center;
-        padding: 0 10px 0 20px;
-        font-size: 19px;
-        align-items: center;
+        font-size: 1.3em;
+        margin: 0;
+        padding-right: 40px;
+        padding-left: 0;
     }
     .productsSearch .productTabs{
-        display: flex;
-        width: calc(90% - 40px);
-        justify-content: center;
-        align-items: center;
-        margin: 0 20px;
+        width: calc(52% - 40px);
+        justify-content: flex-start;
+        margin: 0;
+        padding-left: 40px;
     }
     .productsSearch .productTabs .productsTab{
-        margin-left: 7px;
-        font-size: 19px;
-        color: #cccccc;
-        justify-items: center;
-    }
-    .productsSearch .productTabs .productsTab{
-        text-decoration: none;
+        display: none;
+        margin: 0;
+        justify-content: flex-start;
     }
     .productsSearch .productTabs .productsTab.Selected{
-        color: #BD4F5C;
+        width: 100%;
+        display: block;
+        color: #333333;
+        font-size: 1.3em;
     }
     .productsSearch .productTabs .productsTab:after{
-        content:"/";
-        margin:0 5px;
-    }
-    .productsSearch .productTabs .productsTab:last-child:after{
         content:"";
+        margin: 0;
     }
 }
 

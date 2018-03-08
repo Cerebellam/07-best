@@ -331,6 +331,9 @@ body, html {
     margin-top: 30px;
     width: calc(18% - 30px);
     padding: 0 15px;
+}
+.gallery .filter .filterMobile{
+    display: none;
 
 }
 .gallery .filter .filterCategories{
@@ -341,6 +344,9 @@ body, html {
     letter-spacing: 0.01em;
     padding-bottom: 25px;
     border-bottom: 1px solid #add9e7;
+}
+.gallery .filter .filterCategories .filterMobileSubCategory{
+    display: none;
 }
 .gallery .filter .filterCategories .filterCategory.Selected{
     color: #BD4F5C;
@@ -651,6 +657,137 @@ body, html {
     .productsSearch .productTabs .productsTab:after{
         content:"";
         margin: 0;
+    }
+    .gallery .filter{
+        margin-top: 30px;
+        width: 100%;
+        padding: 0;
+    }
+    .gallery .filter .filterMobile{
+        /*display: block;*/
+    }
+    .gallery .filter .filterCategories{
+        /*display: none;*/
+        color: #cccccc;
+        text-align: center;
+        font-size: 1.1em;
+        line-height: 28px;
+        letter-spacing: 0.01em;
+        padding-bottom: 25px;
+        border-bottom: 1px solid #add9e7;
+    }
+    .gallery .filter .filterMobile:hover .filterCategories{
+        display: flex;
+    }
+    .gallery .filter .filterCategories .filterMobileSubCategory{
+        display: none;
+    }
+    .gallery .filter .filterCategories .filterCategory.Selected{
+        color: #BD4F5C;
+    }
+    .gallery .filter .filterCategories .filterCategory:hover{
+        text-decoration: underline;
+        cursor: default;
+    }
+    .gallery .filter .filterProducts{
+        width: 100%;
+        /*display: none;*/
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .gallery .filter .filterProducts .filterProduct{
+        width: calc(50% - 1px);
+        display: block;
+        margin: 25px 0;
+        text-align: center;
+        color: #cccccc;
+        font-size: 1.1em;
+    }
+    .gallery .filter .filterProducts .filterProduct:hover{
+        color: #333333;
+        transition: color 0.5s;
+        cursor: default;
+    }
+    .gallery .filter .bottomBorder{
+        width: 100%;
+        height: 1px;
+        background-color: #add9e7;
+    }
+
+    .gallery .filter .filterProducts .filterProduct.Border{
+        border-right: 1px solid #add9e7;
+    }
+    .gallery .filter .filterProducts .filterProduct .redSquares{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .gallery .filter .filterProducts .filterProduct .redSquares .redSquare{
+        width: 10px;
+        height: 10px;
+        background-color: #BD4F5C;
+        margin: 4px 3px;
+    }
+    .gallery .filter .filterProducts .filterProduct .graySquare{
+        width: 18px;
+        height: 18px;
+        background-color: #ccc;
+        margin: auto auto;
+    }
+    .gallery .filter .shareCollection{
+        font-family: Helvetica;
+        font-size: 11px;
+        letter-spacing: 0.08em;
+        color: #BD4F5C;
+        text-align: center;
+        padding: 20px;
+    }
+    .gallery .filter .shareCollection:hover{
+        text-decoration: underline;
+    }
+
+
+    .gallery .products{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-bottom: 70px;
+    }
+    .gallery .products .product{
+        width: calc(50% - 80px);
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 30px 40px;
+    }
+    .gallery .products .product:last-child{
+        display: none;
+    }
+    .gallery .products .product .productImage{
+        width: 100%;
+    }
+    .gallery .products .product .productImage img{
+        width: 100%;
+    }
+    .gallery .products .product .productDescription{
+        width: 100%;
+        display: block;
+        text-align: center;
+        font-size: 1.2em;
+        color: #333333;
+        margin-top: 10px;
+    }
+    .gallery .products .product .productPrice{
+        width: 100%;
+        display: block;
+        font-family: Helvetica;
+        font-size: 18px;
+        letter-spacing: 0.15em;
+        text-align: center;
+        color: #98b859;
+        margin: 10px 0;
     }
 }
 

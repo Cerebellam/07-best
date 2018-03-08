@@ -789,6 +789,9 @@ body, html {
         color: #98b859;
         margin: 10px 0;
     }
+    .footer{
+        display: none;
+    }
 }
 
 

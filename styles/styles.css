@@ -786,6 +786,19 @@ body, html {
     }
 }
 @media (max-width: 640px) {
+    .banner .bannerTitle{
+        position: absolute;
+        top: 40%;
+        left: calc(50% - 124px);
+        color: white;
+        font-size: 80px;
+    }
+    .productsSearch .productsTitle{
+        width: calc(50% - 41px);
+    }
+    .productsSearch .productTabs{
+        width: calc(50% - 40px);
+    }
     .gallery .products .product{
         width: calc(100% - 180px);
         display: flex;

@@ -621,11 +621,13 @@ body, html {
         font-size: 100px;
     }
     .productsSearch{
+        width: 100%;
         display:flex;
         justify-content: center;
         padding: 20px 0;
         height: 45px;
         border-bottom: 1px solid #add9e7;
+        margin: 0 0;
     }
     .productsSearch .productsTitle{
         width: calc(48% - 41px);

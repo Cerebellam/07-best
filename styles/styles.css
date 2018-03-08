@@ -12,14 +12,15 @@ body, html {
     z-index: 2;
     display: none;
     border-bottom: 1px solid #add9e7;
+
 }
 #mediaHeader .hamburgerMenu{
     width: calc(10% - 1px);
 }
 #mediaHeader .hamburgerMenu .icon{
-    padding: 16px 30px 15px 30px;
+    padding: 16px 0 15px 0;
     border-right: 1px solid #add9e7;
-
+    margin: 0 auto;
 }
 #mediaHeader .hamburgerMenu .icon .line{
     background: #77787b;
@@ -69,33 +70,35 @@ body, html {
     flex-wrap: wrap;
 }
 #mediaHeader .mediaLogo{
-    width: calc(78% - 1px);
+    width: calc(80% - 1px);
     border-right: 1px solid #add9e7;
     text-align: center;
-    padding: 10px 0 3px 0;
+    padding: 10px 0;
     margin: auto auto;
+    height: 40px;
 }
 #mediaHeader .mediaLogo img{
-    width: 24%;
+    height: 100%;
 }
 #mediaHeader .mediaSearch{
-    width: calc(6% - 1px);
+    width: calc(5% - 1px);
     border-right: 1px solid #add9e7;
     text-align: center;
     margin: auto 0;
-    padding: 17px 0;
+    padding: 18px 0;
+    vertical-align: middle;
 }
 #mediaHeader .mediaSearch img{
-    width: 22px;
+    width: 20px;
 }
 #mediaHeader .mediaShoppingCart{
-    width: 6%;
+    width: 5%;
     text-align: center;
     margin: auto auto;
     opacity: 0.45;
 }
 #mediaHeader .mediaShoppingCart img {
-    width: 22px;
+    width: 20px;
 }
 #header{
     position: fixed;
